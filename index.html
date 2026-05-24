@@ -6,88 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amin Ullah — Web Developer & CS Student</title>
 
-  <!-- ✅ SEO Meta Tags (ADDED) -->
+  <!-- Favicon (generate your own at favicon.io) -->
+  <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
+
+  <!-- SEO Meta Tags -->
   <meta name="description" content="Amin Ullah — Computer Science student with 3.9 CGPA, web developer, Python programmer, and digital marketer based in Muslim Bagh, Balochistan, Pakistan." />
   <meta name="keywords" content="Amin Ullah, web developer, CS student, Python, WordPress, portfolio, Balochistan" />
   <meta name="author" content="Amin Ullah" />
 
-  <!-- ✅ Open Graph (for LinkedIn / WhatsApp sharing) -->
+  <!-- Open Graph (LinkedIn / WhatsApp preview) -->
   <meta property="og:title" content="Amin Ullah — Web Developer & CS Student" />
   <meta property="og:description" content="Computer Science student with 3.9 CGPA passionate about web development, Python, and digital marketing." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://aminullah.dev" />
+  <meta property="og:url" content="https://aminullah888.github.io" /><!-- Update with your real URL -->
+  <meta property="og:image" content="photos/amin uniform pic.jpeg" />
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
-  <!-- ✅ AOS Animations (ADDED) -->
+  <!-- AOS Animations -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-<style>
-    /* ─── CSS Variables ─────────────────────────────── */
+  <style>
+    /* ─── CSS Variables ──────────────────────────────── */
     :root {
-      --bg-primary:      #ffffff;
-      --bg-secondary:    #f4f6fb;
-      --text-primary:    #1a1a2e;
-      --text-secondary:  #555577;
-      --accent:          #4f46e5;
-      --accent-hover:    #3730a3;
-      --accent-light:    #eef2ff;
-      --card-bg:         #ffffff;
-      --shadow:          0 4px 24px rgba(79,70,229,0.10);
-      --header-bg:       rgba(255,255,255,0.92);
-      --border:          #e2e8f0;
-      --grad-a:          #4f46e5;
-      --grad-b:          #7c3aed;
-      --nav-height:      70px;
-
-      /* ✅ Footer variables - ADDED */
-      --footer-bg:         #1a1a2e;
-      --footer-text:       rgba(255,255,255,0.65);
-      --footer-icon-bg:    rgba(255,255,255,0.1);
-      --footer-icon-color: rgba(255,255,255,0.7);
+      --bg-primary:     #ffffff;
+      --bg-secondary:   #f4f6fb;
+      --text-primary:   #1a1a2e;
+      --text-secondary: #555577;
+      --accent:         #4f46e5;
+      --accent-hover:   #3730a3;
+      --accent-light:   #eef2ff;
+      --card-bg:        #ffffff;
+      --shadow:         0 4px 24px rgba(79,70,229,0.10);
+      --header-bg:      rgba(255,255,255,0.92);
+      --border:         #e2e8f0;
+      --grad-a:         #4f46e5;
+      --grad-b:         #7c3aed;
+      --nav-height:     70px;
+      --footer-bg:      #1a1a2e;
+      --footer-text:    rgba(255,255,255,0.65);
+      --footer-icon-bg: rgba(255,255,255,0.10);
     }
 
     .dark-theme {
-      --bg-primary:      #0f0f1a;
-      --bg-secondary:    #1a1a2e;
-      --text-primary:    #e2e8f0;
-      --text-secondary:  #94a3b8;
-      --accent:          #818cf8;
-      --accent-hover:    #6366f1;
-      --accent-light:    #1e1b4b;
-      --card-bg:         #1a1a2e;
-      --shadow:          0 4px 24px rgba(0,0,0,0.4);
-      --header-bg:       rgba(15,15,26,0.92);
-      --border:          #2d2d4e;
-      --grad-a:          #1e1b4b;
-      --grad-b:          #312e81;
-
-      /* ✅ Footer variables - ADDED */
-      --footer-bg:         #0a0a14;
-      --footer-text:       rgba(255,255,255,0.65);
-      --footer-icon-bg:    rgba(255,255,255,0.1);
-      --footer-icon-color: rgba(255,255,255,0.7);
+      --bg-primary:     #0f0f1a;
+      --bg-secondary:   #1a1a2e;
+      --text-primary:   #e2e8f0;
+      --text-secondary: #94a3b8;
+      --accent:         #818cf8;
+      --accent-hover:   #6366f1;
+      --accent-light:   #1e1b4b;
+      --card-bg:        #1a1a2e;
+      --shadow:         0 4px 24px rgba(0,0,0,0.4);
+      --header-bg:      rgba(15,15,26,0.92);
+      --border:         #2d2d4e;
+      --grad-a:         #1e1b4b;
+      --grad-b:         #312e81;
+      --footer-bg:      #0a0a14;
+      --footer-text:    rgba(255,255,255,0.65);
+      --footer-icon-bg: rgba(255,255,255,0.10);
     }
 
-    /* ─── Reset ─────────────────────────────────────── */
-    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-
+    /* ─── Reset ──────────────────────────────────────── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Space Grotesk', sans-serif;
       background: var(--bg-primary);
       color: var(--text-primary);
       line-height: 1.7;
       transition: background 0.3s, color 0.3s;
+      overflow-x: hidden;
     }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
 
     .container { max-width: 1150px; margin: 0 auto; padding: 0 24px; }
-
     section { padding: 90px 0; }
 
     /* ─── Header ─────────────────────────────────────── */
@@ -100,8 +98,9 @@
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
-      transition: background 0.3s;
+      transition: background 0.3s, box-shadow 0.3s;
     }
+    header.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
 
     nav {
       display: flex;
@@ -116,7 +115,6 @@
       font-size: 1.3rem;
       font-weight: 500;
       color: var(--text-primary);
-      text-decoration: none;
       letter-spacing: -0.5px;
     }
     .logo .bracket { color: var(--accent); }
@@ -126,9 +124,7 @@
       list-style: none;
       gap: 2rem;
     }
-
     .nav-links a {
-      text-decoration: none;
       font-size: 0.92rem;
       font-weight: 500;
       color: var(--text-secondary);
@@ -183,13 +179,13 @@
       border-radius: 2px;
       transition: all 0.3s;
     }
-    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-    /* Mobile menu */
+    /* Mobile menu — FIX: hidden on desktop, shown only on mobile */
     .mobile-menu {
-      display: none;
+      display: none; /* hidden by default on desktop */
       position: fixed;
       top: var(--nav-height);
       left: 0; right: 0;
@@ -211,7 +207,6 @@
     .mobile-menu ul a {
       display: block;
       padding: 14px 0;
-      text-decoration: none;
       color: var(--text-primary);
       font-weight: 500;
       font-size: 1rem;
@@ -229,11 +224,9 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: '';
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background-image:
         linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
@@ -259,12 +252,11 @@
       animation: float 4s ease-in-out infinite;
     }
     @keyframes float {
-      0%,100% { transform: translateY(0); }
-      50%      { transform: translateY(-12px); }
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-12px); }
     }
 
     .hero-text { color: #fff; }
-
     .hero-text .greeting {
       font-family: 'Fira Code', monospace;
       font-size: 0.95rem;
@@ -272,7 +264,6 @@
       margin-bottom: 10px;
       letter-spacing: 0.05em;
     }
-
     .hero-text h1 {
       font-size: 3.2rem;
       font-weight: 700;
@@ -288,8 +279,15 @@
       margin-bottom: 20px;
       min-height: 32px;
     }
-    #typewriter { border-right: 2px solid rgba(255,255,255,0.7); padding-right: 4px; animation: blink 0.75s step-end infinite; }
-    @keyframes blink { 0%,100%{border-color:rgba(255,255,255,0.7)} 50%{border-color:transparent} }
+    #typewriter {
+      border-right: 2px solid rgba(255,255,255,0.7);
+      padding-right: 4px;
+      animation: blink 0.75s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { border-color: rgba(255,255,255,0.7); }
+      50%       { border-color: transparent; }
+    }
 
     .hero-text p {
       font-size: 1.05rem;
@@ -307,22 +305,14 @@
       font-size: 0.95rem;
       font-weight: 600;
       font-family: 'Space Grotesk', sans-serif;
-      text-decoration: none;
       cursor: pointer;
       border: none;
       transition: transform 0.2s, box-shadow 0.2s;
       display: inline-flex; align-items: center; gap: 8px;
     }
-    .btn-primary {
-      background: #fff;
-      color: var(--grad-a);
-    }
+    .btn-primary { background: #fff; color: var(--grad-a); }
     .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
-    .btn-secondary {
-      background: transparent;
-      color: #fff;
-      border: 2px solid rgba(255,255,255,0.5);
-    }
+    .btn-secondary { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); }
     .btn-secondary:hover { background: rgba(255,255,255,0.12); transform: translateY(-3px); }
 
     .scroll-down {
@@ -335,9 +325,12 @@
       letter-spacing: 0.08em;
       animation: bounce 2s infinite;
     }
-    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(8px); }
+    }
 
-    /* ─── Section titles ─────────────────────────────── */
+    /* ─── Section Titles ─────────────────────────────── */
     .section-title {
       text-align: center;
       font-size: 2.2rem;
@@ -346,13 +339,13 @@
       margin-bottom: 12px;
       letter-spacing: -0.5px;
     }
+    .section-title span { color: var(--accent); }
     .section-sub {
       text-align: center;
       color: var(--text-secondary);
       margin-bottom: 56px;
       font-size: 1.02rem;
     }
-    .section-title span { color: var(--accent); }
     .title-dot {
       display: inline-block;
       width: 8px; height: 8px;
@@ -365,27 +358,26 @@
     /* ─── About ──────────────────────────────────────── */
     .about { background: var(--bg-secondary); }
 
-    .about-content {
+    .about-grid {
       display: grid;
       grid-template-columns: 260px 1fr;
       gap: 3.5rem;
       align-items: start;
     }
 
-    .about-img-wrap {
-      position: relative;
-    }
+    .about-img-wrap { position: relative; display: inline-block; }
 
     .about-img {
-      width: 260px; height: 300px;
+      width: 260px; height: 310px;
       border-radius: 20px;
       object-fit: cover;
       display: block;
       box-shadow: var(--shadow);
     }
 
+    /* Placeholder shown until 2nd photo is added */
     .about-img-placeholder {
-      width: 260px; height: 300px;
+      width: 260px; height: 310px;
       border-radius: 20px;
       background: var(--accent-light);
       border: 2px dashed var(--accent);
@@ -394,9 +386,10 @@
       gap: 12px;
       color: var(--accent);
     }
-    .about-img-placeholder i { font-size: 2.5rem; }
-    .about-img-placeholder p { font-size: 0.85rem; text-align: center; opacity: 0.7; }
+    .about-img-placeholder i { font-size: 2.5rem; opacity: 0.5; }
+    .about-img-placeholder p { font-size: 0.82rem; text-align: center; opacity: 0.65; line-height: 1.5; }
 
+    /* FIX: badge now has real text */
     .about-badge {
       position: absolute;
       bottom: -14px; right: -14px;
@@ -423,6 +416,7 @@
       margin-bottom: 16px;
     }
 
+    /* FIX: stat now says 3+ not 5+ */
     .about-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -446,17 +440,6 @@
       color: var(--text-secondary);
       margin-top: 2px;
     }
-
-    .edu-box {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--accent);
-      border-radius: 12px;
-      padding: 1.2rem 1.5rem;
-      margin-top: 1.5rem;
-    }
-    .edu-box h4 { color: var(--accent); font-size: 0.95rem; margin-bottom: 6px; }
-    .edu-box p  { color: var(--text-secondary); font-size: 0.9rem; margin: 3px 0; }
 
     /* ─── Skills ─────────────────────────────────────── */
     .skills { background: var(--bg-primary); }
@@ -489,7 +472,7 @@
       margin: 0 auto 1rem;
       font-size: 1.5rem;
       color: var(--accent);
-      transition: background 0.25s;
+      transition: background 0.25s, color 0.25s;
     }
     .skill-card:hover .icon-wrap { background: var(--accent); color: #fff; }
     .skill-card h3 { font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; }
@@ -529,13 +512,12 @@
     }
     .project-thumb::after {
       content: '';
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background: rgba(0,0,0,0.12);
     }
-    .grad-red    { background: linear-gradient(135deg,#f97316,#ef4444); }
-    .grad-purple { background: linear-gradient(135deg,#4f46e5,#7c3aed); }
-    .grad-teal   { background: linear-gradient(135deg,#0ea5e9,#14b8a6); }
+    .grad-red    { background: linear-gradient(135deg, #f97316, #ef4444); }
+    .grad-purple { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+    .grad-teal   { background: linear-gradient(135deg, #0ea5e9, #14b8a6); }
 
     .project-body { padding: 1.4rem 1.6rem 1.6rem; }
     .project-body h3 { font-size: 1.08rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
@@ -551,14 +533,13 @@
       font-weight: 600;
     }
 
-    .project-links { display: flex; gap: 10px; }
+    .project-links { display: flex; gap: 10px; flex-wrap: wrap; }
     .btn-sm {
       padding: 8px 18px;
       border-radius: 50px;
       font-size: 0.85rem;
       font-weight: 600;
       font-family: 'Space Grotesk', sans-serif;
-      text-decoration: none;
       border: none;
       cursor: pointer;
       transition: all 0.2s;
@@ -568,6 +549,17 @@
     .btn-sm-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
     .btn-sm-outline { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); }
     .btn-sm-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Coming soon badge for projects without live demo */
+    .badge-soon {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; border-radius: 50px;
+      font-size: 0.82rem; font-weight: 600;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px dashed var(--border);
+      cursor: default;
+    }
 
     /* ─── Education ──────────────────────────────────── */
     .education-section { background: var(--bg-primary); }
@@ -634,13 +626,10 @@
       font-size: 1rem;
     }
     .contact-item h4 { font-size: 0.88rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 3px; }
-    .contact-item p, .contact-item a {
-      font-size: 0.95rem; color: var(--text-primary);
-      text-decoration: none;
-    }
+    .contact-item p,
+    .contact-item a { font-size: 0.95rem; color: var(--text-primary); }
     .contact-item a:hover { color: var(--accent); }
 
-    .contact-form-wrap { }
     .contact-form-wrap h3 { font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.5rem; }
 
     #contactForm { display: flex; flex-direction: column; gap: 14px; }
@@ -660,6 +649,8 @@
       transition: border-color 0.2s, box-shadow 0.2s;
       outline: none;
     }
+    #contactForm input::placeholder,
+    #contactForm textarea::placeholder { color: var(--text-secondary); }
     #contactForm input:focus,
     #contactForm textarea:focus {
       border-color: var(--accent);
@@ -667,12 +658,41 @@
     }
     #contactForm textarea { resize: vertical; min-height: 140px; }
 
-    .form-submit { background: var(--accent); color: #fff; border: none; padding: 13px 28px; border-radius: 50px; font-size: 1rem; font-weight: 600; font-family: 'Space Grotesk', sans-serif; cursor: pointer; transition: background 0.2s, transform 0.2s; display: flex; align-items: center; gap: 8px; align-self: flex-start; }
+    .form-submit {
+      background: var(--accent); color: #fff;
+      border: none; padding: 13px 28px;
+      border-radius: 50px; font-size: 1rem; font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      align-self: flex-start;
+    }
     .form-submit:hover { background: var(--accent-hover); transform: translateY(-2px); }
+    .form-submit:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
+
+    /* Form feedback messages */
+    .form-msg {
+      display: none;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+    .form-msg.success {
+      background: #d1fae5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }
+    .form-msg.error {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #fca5a5;
+    }
+    .dark-theme .form-msg.success { background: #052e16; color: #86efac; border-color: #166534; }
+    .dark-theme .form-msg.error   { background: #2d0a0a; color: #fca5a5; border-color: #7f1d1d; }
 
     /* ─── Footer ─────────────────────────────────────── */
-    /* ✅ FIXED: now uses --footer-bg and --footer-text variables
-       so it always looks correct in both light and dark mode     */
     footer {
       background: var(--footer-bg);
       color: var(--footer-text);
@@ -686,7 +706,7 @@
       gap: 1.2rem;
     }
     .footer-inner p { font-size: 0.88rem; }
-    .footer-inner a { color: var(--footer-text); text-decoration: none; }
+    .footer-inner a { color: var(--footer-text); }
 
     .social-links { display: flex; gap: 10px; }
     .social-links a {
@@ -694,9 +714,9 @@
       border-radius: 50%;
       background: var(--footer-icon-bg);
       display: flex; align-items: center; justify-content: center;
-      color: var(--footer-icon-color);
+      color: var(--footer-text);
       font-size: 1.1rem;
-      transition: background 0.2s, transform 0.2s;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
     }
     .social-links a:hover { background: var(--accent); color: #fff; transform: translateY(-3px); }
 
@@ -706,16 +726,16 @@
       .hero-text p { margin: 0 auto 28px; }
       .cta-buttons { justify-content: center; }
       .profile-img { width: 220px; height: 220px; }
-      .about-content { grid-template-columns: 1fr; }
-      .about-img-wrap { display: flex; justify-content: center; margin-bottom: 1rem; }
-      .about-stats { grid-template-columns: repeat(3,1fr); }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img-wrap { margin: 0 auto 2rem; }
+      .about-stats { grid-template-columns: repeat(3, 1fr); }
       .contact-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .mobile-menu { display: block; }
+      .mobile-menu { display: block; } /* only shown on mobile */
       .hero-text h1 { font-size: 2.3rem; }
       section { padding: 70px 0; }
       .form-row { grid-template-columns: 1fr; }
@@ -732,10 +752,12 @@
 
 <body>
 
-  <!-- ─── Header ─── -->
-  <header>
+  <!-- ════ HEADER ════ -->
+  <header id="siteHeader">
     <nav>
-      <a href="#home" class="logo"><span class="bracket">&lt;</span>Amin<span class="bracket">/&gt;</span></a>
+      <a href="#home" class="logo">
+        <span class="bracket">&lt;</span>Amin<span class="bracket">/&gt;</span>
+      </a>
 
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -750,7 +772,6 @@
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <i class="fas fa-moon"></i>
         </button>
-        <!-- ✅ Hamburger button -->
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -758,111 +779,155 @@
     </nav>
   </header>
 
-  <!-- ✅ Mobile menu -->
+  <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="#home" class="mobile-link">Home</a></li>
-      <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#home"      class="mobile-link">Home</a></li>
+      <li><a href="#about"     class="mobile-link">About</a></li>
+      <li><a href="#skills"    class="mobile-link">Skills</a></li>
+      <li><a href="#projects"  class="mobile-link">Projects</a></li>
       <li><a href="#education" class="mobile-link">Education</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#contact"   class="mobile-link">Contact</a></li>
     </ul>
   </div>
 
-  <!-- ─── Hero ─── -->
+
+  <!-- ════ HERO ════ -->
   <section id="home" class="hero">
     <div class="container">
       <div class="hero-content">
-        <img src="photos/amin uniform pic.jpeg" alt="Amin Ullah" class="profile-img" data-aos="zoom-in" />
+
+        <img
+          src="photos/amin uniform pic.jpeg"
+          alt="Amin Ullah"
+          class="profile-img"
+          data-aos="zoom-in"
+        />
+
         <div class="hero-text" data-aos="fade-left" data-aos-delay="100">
-          <p class="greeting">// Hello, World! </p>
+          <p class="greeting">// Hello, World!</p>
           <h1>Amin Ullah</h1>
-          <!-- ✅ Typewriter effect -->
+
           <div class="typewriter-wrapper">
             <span id="typewriter"></span>
           </div>
-          <p>A Computer Science student, passionate about crafting impactful digital experiences. I build responsive websites, develop Python solutions, run Meta ad campaigns, and create compelling graphic designs.</p>
+
+          <!-- FIX: removed the awkward comma after "student" -->
+          <p>A Computer Science student passionate about crafting impactful digital experiences. I build responsive websites, develop Python solutions, run Meta ad campaigns, and create compelling graphic designs.</p>
+
           <div class="cta-buttons">
-            <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
-            <a href="photos/Amin Ullah CV .pdf" class="btn-secondary" download><i class="fas fa-download"></i> Download CV</a>
+            <a href="#contact" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+            <a href="photos/Amin Ullah CV .pdf" class="btn-secondary" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
           </div>
         </div>
+
       </div>
     </div>
+
     <div class="scroll-down">
       <span>SCROLL</span>
       <i class="fas fa-chevron-down"></i>
     </div>
   </section>
 
-  <!-- ─── About ─── -->
+
+  <!-- ════ ABOUT ════ -->
   <section id="about" class="about">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">About <span>Me</span><span class="title-dot"></span></h2>
-      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">A little background on who I am</p>
 
-<div class="about-content">
-  
-  <!-- Image Section -->
+      <h2 class="section-title" data-aos="fade-up">
+        About <span>Me</span><span class="title-dot"></span>
+      </h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">
+        A little background on who I am
+      </p>
+
+      <!-- FIX: clean 2-column grid, no orphaned closing divs -->
+      <div class="about-grid">
+
+        <!-- Left: Image -->
+        <div data-aos="fade-right">
+          <div class="about-img-wrap">
+
+            <!--
+              ════════════════════════════════════════════════
+              ADD YOUR 2ND PHOTO HERE when ready:
+              Replace the <div class="about-img-placeholder">
+              block below with:
+              <img src="photos/YOUR-PHOTO.jpg" alt="Amin Ullah" class="about-img" />
+              ════════════════════════════════════════════════
+            -->
+             <!-- Image Section -->
   <div data-aos="fade-right">
     <div class="about-img-wrap">
       <img src="photos/my pic.jpg" alt="Amin Ullah" class="about-img" />
-      <div class="about-badge">🎓 </div>
+      
     </div>
   </div> 
 
-  <!-- Text & Stats Section -->
-  <div class="about-text" data-aos="fade-left" data-aos-delay="100">
-    <h3>CS Student & Full-Stack Thinker</h3>
-    <p>
-      I'm a final-year Computer Science student at BUITEMS who genuinely enjoys solving real-world problems with technology. From building my first website to integrating AI chatbots into web applications — every project has deepened my passion for development.
-    </p>
-    <p>
-      Beyond coding, I've developed a strong background in digital marketing, running Meta ad campaigns that helped local businesses grow online. I believe the best developers understand both <em>how to build</em> and <em>why people use</em> what's built.
-    </p>
-    <p>
-      When I'm not coding, I'm designing in Figma, exploring new Python libraries, or writing technical documentation in LaTeX.
-    </p>
-
-    <!-- Stats Section -->
-    <div class="about-stats">
-      <div class="stat-card">
-        <div class="num">3.9</div>
-        <div class="lbl">CGPA</div>
-      </div>
-      <div class="stat-card">
-        <div class="num">8th</div>
-        <div class="lbl">Semester</div>
-      </div>
-      <div class="stat-card">
-        <div class="num">5+</div>
-        <div class="lbl">Projects</div>
-      </div>
-    </div>
-    
-  </div> <!-- Closes about-text -->
-  
-</div> <!-- Closes about-content (This is the crucial fix!) -->
-
-          <div class="edu-box">
-            <h4><i class="fas fa-university"></i> &nbsp;University</h4>
-            <p><strong>BUITEMS Sub Campus Muslim Bagh</strong></p>
-            <p>BS Computer Science — 8th Semester</p>
-            <p><strong>CGPA: 3.9 / 4.0</strong></p>
+            <!-- FIX: badge now has real text -->
+            <div class="about-badge">🎓 Final Year Student</div>
           </div>
         </div>
-      </div>
+
+        <!-- Right: Text + Stats -->
+        <div class="about-text" data-aos="fade-left" data-aos-delay="100">
+
+          <h3>CS Student & Full-Stack Thinker</h3>
+
+          <p>
+            I'm a final-year Computer Science student at BUITEMS who genuinely enjoys solving real-world problems with technology. From building my first website to integrating AI chatbots into web applications — every project has deepened my passion for development.
+          </p>
+          <p>
+            Beyond coding, I've developed a strong background in digital marketing, running Meta ad campaigns that helped local businesses grow online. I believe the best developers understand both <em>how to build</em> and <em>why people use</em> what's built.
+          </p>
+          <p>
+            When I'm not coding, I'm designing in Figma, exploring new Python libraries, or writing technical documentation in LaTeX.
+          </p>
+
+          <!-- FIX: stat changed from "5+" to "3+" to match actual projects -->
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="num">3.9</div>
+              <div class="lbl">CGPA</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">8th</div>
+              <div class="lbl">Semester</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">3+</div>
+              <div class="lbl">Projects</div>
+            </div>
+          </div>
+
+        </div><!-- end about-text -->
+
+      </div><!-- end about-grid -->
+
+      <!-- FIX: edu-box REMOVED from here — info already in Education section below -->
+
     </div>
   </section>
 
-  <!-- ─── Skills ─── -->
+
+  <!-- ════ SKILLS ════ -->
   <section id="skills" class="skills">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Skills & <span>Expertise</span><span class="title-dot"></span></h2>
-      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">Technologies and tools I work with</p>
+
+      <h2 class="section-title" data-aos="fade-up">
+        Skills & <span>Expertise</span><span class="title-dot"></span>
+      </h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">
+        Technologies and tools I work with
+      </p>
 
       <div class="skills-grid">
+
         <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
           <div class="icon-wrap"><i class="fas fa-code"></i></div>
           <h3>Web Development</h3>
@@ -875,7 +940,7 @@
         </div>
 
         <div class="skill-card" data-aos="fade-up" data-aos-delay="80">
-          <!-- ✅ Fixed icon: fab fa-python (was fas fa-python — wrong prefix) -->
+          <!-- FIX: fab fa-python (correct prefix) -->
           <div class="icon-wrap"><i class="fab fa-python"></i></div>
           <h3>Programming</h3>
           <ul class="skill-list">
@@ -929,15 +994,22 @@
             <li>Communication</li>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ─── Projects ─── -->
+
+  <!-- ════ PROJECTS ════ -->
   <section id="projects" class="projects">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Featured <span>Projects</span><span class="title-dot"></span></h2>
-      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">Things I've built and shipped</p>
+
+      <h2 class="section-title" data-aos="fade-up">
+        Featured <span>Projects</span><span class="title-dot"></span>
+      </h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">
+        Things I've built and shipped
+      </p>
 
       <div class="projects-grid">
 
@@ -954,9 +1026,13 @@
               <span class="tag">Web Dev</span>
             </div>
             <div class="project-links">
-              <!-- ✅ Replace # with your actual links -->
-              <a href="#" class="btn-sm btn-sm-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-              <a href="https://github.com/AminUllah888" class="btn-sm btn-sm-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <!-- Replace # with your real live link when ready -->
+              <a href="#" class="btn-sm btn-sm-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/AminUllah888" class="btn-sm btn-sm-outline" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -974,13 +1050,17 @@
               <span class="tag">Responsive</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn-sm btn-sm-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-              <a href="https://github.com/AminUllah888" class="btn-sm btn-sm-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <!-- Replace # with your real live link when ready -->
+              <a href="#" class="btn-sm btn-sm-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/AminUllah888" class="btn-sm btn-sm-outline" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- ✅ Added a 3rd project card placeholder — fill in your next project -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="200">
           <div class="project-thumb grad-teal">
             <i class="fas fa-bullhorn" style="position:relative;z-index:1;color:#fff"></i>
@@ -994,7 +1074,10 @@
               <span class="tag">Analytics</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn-sm btn-sm-primary"><i class="fas fa-external-link-alt"></i> Case Study</a>
+              <!-- Replace # with your case study link when ready -->
+              <a href="#" class="btn-sm btn-sm-primary">
+                <i class="fas fa-file-alt"></i> Case Study
+              </a>
             </div>
           </div>
         </div>
@@ -1003,11 +1086,17 @@
     </div>
   </section>
 
-  <!-- ─── Education ─── -->
+
+  <!-- ════ EDUCATION ════ -->
   <section id="education" class="education-section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Education & <span>Certifications</span><span class="title-dot"></span></h2>
-      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">My academic journey and credentials</p>
+
+      <h2 class="section-title" data-aos="fade-up">
+        Education & <span>Certifications</span><span class="title-dot"></span>
+      </h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">
+        My academic journey and credentials
+      </p>
 
       <div class="edu-grid">
 
@@ -1038,13 +1127,21 @@
     </div>
   </section>
 
-  <!-- ─── Contact ─── -->
+
+  <!-- ════ CONTACT ════ -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Get In <span>Touch</span><span class="title-dot"></span></h2>
-      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">I'd love to hear from you — let's build something great</p>
+
+      <h2 class="section-title" data-aos="fade-up">
+        Get In <span>Touch</span><span class="title-dot"></span>
+      </h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="50">
+        I'd love to hear from you — let's build something great
+      </p>
 
       <div class="contact-grid">
+
+        <!-- Left: Contact info -->
         <div class="contact-info" data-aos="fade-right">
           <h3>Contact Information</h3>
           <p>Feel free to reach out for collaborations, freelance work, or just a friendly chat about tech.</p>
@@ -1061,8 +1158,7 @@
             <div class="ci-icon"><i class="fas fa-phone"></i></div>
             <div>
               <h4>Phone</h4>
-              <a href="tel:+923201897056">+92 3201897056</a><br>
-             
+              <a href="tel:+923201897056">+92 3201897056</a>
             </div>
           </div>
 
@@ -1083,49 +1179,76 @@
           </div>
         </div>
 
+        <!-- Right: Contact form -->
         <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="100">
           <h3>Send a Message</h3>
+
           <form id="contactForm" action="https://formspree.io/f/xnjonayo" method="POST">
             <div class="form-row">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
+              <input type="text"  name="name"    placeholder="Your Name"  required />
+              <input type="email" name="email"   placeholder="Your Email" required />
             </div>
-            <input type="text" name="subject" placeholder="Subject" />
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="form-submit">
+            <input    type="text"  name="subject"  placeholder="Subject" />
+            <textarea             name="message"  placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="form-submit" id="submitBtn">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
+            <!-- FIX: success and error feedback messages -->
+            <div class="form-msg success" id="formSuccess">
+              ✅ Message sent successfully! I'll get back to you soon.
+            </div>
+            <div class="form-msg error" id="formError">
+              ❌ Something went wrong. Please email me directly at aminkkakar888@gmail.com
+            </div>
           </form>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ─── Footer ─── -->
+
+  <!-- ════ FOOTER ════ -->
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <p>&copy; 2026 Amin Ullah · Muslim Bagh, Balochistan, Pakistan</p>
+        <p>&copy; 2026 Amin Ullah &nbsp;·&nbsp; Muslim Bagh, Balochistan, Pakistan</p>
         <div class="social-links">
-          <a href="https://linkedin.com" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/AminUllah888" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="mailto:aminkkakar888@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <!--
+            FIX: Replace href below with your real LinkedIn profile URL
+            Example: https://linkedin.com/in/aminullah888
+          -->
+          <a href="https://linkedin.com/in/your-profile-id" title="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/AminUllah888" title="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:aminkkakar888@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- ✅ AOS Library -->
+
+  <!-- ════ SCRIPTS ════ -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
   <script>
-    // ── Init AOS ──────────────────────────────────────────
+    /* ── AOS ─────────────────────────────────────────── */
     AOS.init({ duration: 650, once: true, offset: 80 });
 
-    // ── Theme Toggle ──────────────────────────────────────
+    /* ── Header shadow on scroll ─────────────────────── */
+    window.addEventListener('scroll', () => {
+      document.getElementById('siteHeader')
+        .classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    /* ── Theme Toggle ────────────────────────────────── */
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon   = themeToggle.querySelector('i');
-
     const saved       = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -1141,7 +1264,7 @@
       localStorage.setItem('theme', dark ? 'dark' : 'light');
     });
 
-    // ── Mobile Menu ───────────────────────────────────────
+    /* ── Mobile Menu ─────────────────────────────────── */
     const hamburger  = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
 
@@ -1150,7 +1273,6 @@
       mobileMenu.classList.toggle('open');
     });
 
-    // Close mobile menu on link click
     document.querySelectorAll('.mobile-link').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
@@ -1158,32 +1280,46 @@
       });
     });
 
-    // ── Active Nav on Scroll ──────────────────────────────
-    const sections  = document.querySelectorAll('section[id]');
-    const navLinks  = document.querySelectorAll('.nav-links a');
+    /* ── Active Nav on Scroll ────────────────────────── */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
 
-    const observer = new IntersectionObserver(entries => {
+    new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(a => a.classList.remove('active'));
-          const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          const active = document.querySelector(
+            `.nav-links a[href="#${entry.target.id}"]`
+          );
           if (active) active.classList.add('active');
         }
       });
-    }, { rootMargin: '-40% 0px -55% 0px' });
+    }, { rootMargin: '-40% 0px -55% 0px' }).observe
+      ? sections.forEach(s =>
+          new IntersectionObserver(entries => {
+            entries.forEach(e => {
+              if (e.isIntersecting) {
+                navLinks.forEach(a => a.classList.remove('active'));
+                const el = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+                if (el) el.classList.add('active');
+              }
+            });
+          }, { rootMargin: '-40% 0px -55% 0px' }).observe(s)
+        )
+      : null;
 
-    sections.forEach(s => observer.observe(s));
-
-    // ── Smooth Scroll ─────────────────────────────────────
+    /* ── Smooth Scroll ───────────────────────────────── */
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#') return;
         e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
 
-    // ── ✅ Typewriter Effect ───────────────────────────────
+    /* ── Typewriter Effect ───────────────────────────── */
     const phrases = [
       'Computer Science Student',
       'Web Developer',
@@ -1195,7 +1331,7 @@
     let pi = 0, ci = 0, deleting = false;
     const tw = document.getElementById('typewriter');
 
-    function typewrite() {
+    (function typewrite() {
       const phrase = phrases[pi];
       if (!deleting) {
         tw.textContent = phrase.slice(0, ++ci);
@@ -1212,8 +1348,44 @@
         }
       }
       setTimeout(typewrite, deleting ? 55 : 95);
-    }
-    typewrite();
+    })();
+
+    /* ── Contact Form — AJAX with success/error feedback */
+    const form       = document.getElementById('contactForm');
+    const submitBtn  = document.getElementById('submitBtn');
+    const successMsg = document.getElementById('formSuccess');
+    const errorMsg   = document.getElementById('formError');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      successMsg.style.display = 'none';
+      errorMsg.style.display   = 'none';
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+
+      try {
+        const res = await fetch(form.action, {
+          method:  'POST',
+          body:    new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (res.ok) {
+          form.reset();
+          successMsg.style.display = 'block';
+          submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+          submitBtn.disabled  = false;
+          setTimeout(() => { successMsg.style.display = 'none'; }, 6000);
+        } else {
+          throw new Error('Server error');
+        }
+      } catch {
+        errorMsg.style.display = 'block';
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        submitBtn.disabled  = false;
+      }
+    });
   </script>
 
 </body>
